@@ -18,7 +18,7 @@ server.use(morgan('dev'))
 //     }); 
 // }
 
-server.get('/', async (req,res, next) => {
+server.get('/', async (req,res,next) => {
     // try{
     //     let result = await f(4,3)
     //     res.status(200).json(result) 
@@ -33,7 +33,7 @@ server.get('/', async (req,res, next) => {
     //     res.status(500).json(err)
     // })
     console.log('sanity check'); 
-    res.json({MESSAGE: process.env.MESSAGE})
+    // res.json({MESSAGE: process.env.MESSAGE})
     // res.send('hello world')
 })
 
