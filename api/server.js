@@ -1,4 +1,4 @@
-const { response } = require('express');
+
 const express = require('express')
 const helmet = require('helmet')
 const morgan = require('morgan'); 
@@ -33,7 +33,7 @@ server.get('/', async (req,res,next) => {
     //     res.status(500).json(err)
     // })
     console.log('sanity check'); 
-    // res.json({MESSAGE: process.env.MESSAGE})
+    res.json({MESSAGE: process.env.MESSAGE})
     // res.send('hello world')
 })
 
