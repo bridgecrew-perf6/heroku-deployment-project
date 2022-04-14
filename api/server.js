@@ -32,6 +32,7 @@ server.get('/', async (req,res, next) => {
     // .catch(err => {
     //     res.status(500).json(err)
     // })
+    console.log('sanity check'); 
     res.json({MESSAGE: process.env.MESSAGE})
     // res.send('hello world')
 })
